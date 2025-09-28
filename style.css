@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+#auth, #chat {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, button, select {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+#captchaArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#captchaText {
+  background: #000;
+  color: #0f0;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#messages {
+  background: white;
+  border: 1px solid #ccc;
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мессенджер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth">
+    <h2>Регистрация / Вход</h2>
+    <input id="username" placeholder="Имя пользователя">
+    <input id="password" placeholder="Пароль" type="password">
+    <input id="confirm" placeholder="Подтвердите пароль" type="password">
+    <div id="captchaArea">
+      <span id="captchaText">CAPTCHA</span>
+      <input id="captchaInput" placeholder="Введите капчу">
+    </div>
+    <button id="registerBtn">Зарегистрироваться</button>
+    <button id="loginBtn">Войти</button>
+    <div id="authStatus"></div>
+  </div>
+
+  <div id="chat" style="display:none;">
+    <h2>Чат (<span id="me"></span>)</h2>
+    <select id="recipient">
+      <option value="all">Всем</option>
+    </select>
+    <div id="messages"></div>
+    <input id="message" placeholder="Сообщение...">
+    <button id="sendBtn">Отправить</button>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
